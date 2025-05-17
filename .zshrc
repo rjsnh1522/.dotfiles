@@ -131,7 +131,15 @@ export PATH="$PATH:/opt/nvim/"
 source ~/.aliases
 
 
+# setup fzf key bindings and fuzzy completions
+source <(fzf --zsh)
 
+# zoxied configuration
+eval "$(zoxide init --cmd cd zsh)"
+
+
+#go path
+export PATH=$PATH:$HOME/go/bin
 
 
 
